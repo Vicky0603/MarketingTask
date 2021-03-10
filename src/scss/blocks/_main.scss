@@ -1,0 +1,131 @@
+.main {
+    padding-top: 80px;
+    min-height: 80px;
+    &__wrapper {
+        display: flex;
+        align-items: center;
+    }
+    &__hit {
+        margin-left: 40px;
+    } 
+    &__btn {
+        position: relative;
+        background-color: $second-color;
+        color: $white-bg;
+        width: 124px;
+        height: 28px;
+        border-radius: 4px;
+        border: none;
+        img {
+            position: absolute;
+            top: 6.5px;
+            left: 10px;
+        }
+        span {
+            padding-left: 11px;
+            font-size: 12px;
+            line-height: 28px;
+        }
+    }
+    &__descr {
+        padding-left: 135px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 150%;
+        text-transform: uppercase;
+        color: #1A1A18;
+    } 
+    &__block {
+        margin-top: 30px;
+        min-height: 250px;
+        background: url('../img/bg.png') center (center/cover) no-repeat;
+        background-color: $white-bg;
+        padding: 30px 291px 136px 135px;
+        position: relative;
+    }
+    &__items {
+        max-width: 100%;
+        min-height: 84px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        margin-right: 30px;
+        &:nth-child(4) {
+            margin-right: 0;
+        }
+    }
+    &__text {
+        margin-top: 20px;
+        width: 123px;
+        height: 40px;
+        background-color: $white-bg;
+        font-size: 20px;
+        line-height: 40px;
+        font-weight: 500;
+        text-align: center;
+        border-radius: 4px;
+    }
+    &__dbtn, &__pbtn {
+        margin-top: 20px;
+        background-color: $white-bg;
+        border-radius: 4px;
+        height: 40px;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    &__type {
+        font-weight: 400;
+        line-height: 24px;
+    }
+    &__price, &__diameter, &__packaging, &__type {
+        font-size: 14px;
+        img {
+            padding-right: 8px;
+        }
+    }
+    &__send {
+        margin-top: 50px;
+    }
+    &__sendBtn {
+        border: 2px solid $main-color;
+        color: $main-color;
+        width: 211px;
+        height: 60px;
+        border-radius: 4px;
+        background-color: $white-bg;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 30px;
+        text-transform: uppercase;
+    }
+    &__flagman {
+        position: absolute;
+        top: 90px;
+        right: 130px;
+    }
+    &__dbtn, &__pbtn, &__sendBtn {
+        border: 1px solid $white-bg;
+        &:hover {
+            border: 1px solid $main-color;
+            background-color: #FCE8E9;
+        }
+        &:active {
+            background-color: $main-color;
+            color: $white-bg;
+        }
+    }
+}
+
+.active {
+    background-color: $main-color;
+    color: $white-bg;
+    &:hover {
+        background-color: $main-color;
+    }
+}
+
